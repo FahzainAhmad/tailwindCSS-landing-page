@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>mCash - Daily Rewards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            prefix: "tw-",
+            corePlugins: {
+                preflight: false,
+                content: ["./**/*.html"],
+                theme: {
+                    screens: {
+                        'sm': '320px',
+                        'md': '400px',
+                        'lg': '720px',
+                        'xl': '1080px',
+                        '2xl': '1280px',
+                    },
+                    extend: {
+                        spacing: {
+                            '66': '17rem',
+                            '82': '22rem',
+                            '83': '23rem',
+                            '84': '23.5rem',
+                            '94': '23.5rem',
+                            '100': '24.5rem',
+                            '102': '25rem',
+                            '103': '25.5rem',
+                            '104': '27rem',
+                            '105': '28rem',
+                            '106': '30rem',
+                        },
+                        borderRadius: {
+                            '4xl': '2rem',
+                            '5xl': '5rem',
+                        }
+                    },
+                    plugins: [],
+                }
+            }
+        }
+    </script>
+    <style>
+        .head-contain {
+            filter: drop-shadow(0px 0px 20px black);
+
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .btn-download {
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: #252525;
+            border-radius: 0px;
+            transition-duration: 200ms;
+            filter: none;
+            box-shadow: 0px 0px 20px white;
+        }
+
+        .btn-download:hover {
+            border-radius: 10px;
+            transition-duration: 200ms;
+            background-color: rgb(161, 247, 161);
+            color: black;
+            box-shadow: 0px 0px 20px rgb(161, 247, 161);
+        }
+
+        .submitbt:hover {
+            background-color: white;
+            color: #5C00A4;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md !tw-bg-[#45007B] nav-shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand !tw-text-white" href="#">mCash</a>
+            <button class="navbar-toggler !tw-text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active !tw-text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link !tw-text-white" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link !tw-text-white" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link !tw-text-white" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link !tw-text-white" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link !tw-text-white" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main !tw-w-full !tw-h-[35rem] !tw-bg-[#5C00A4] !tw-brightness-75" id="particles-js">
+
+    </div>
+    <div class=" head-contain !tw-absolute !tw-right-[10rem] !tw-top-24">
+        <img src="phone.png" class="!tw-w-[15rem]" alt="">
+    </div>
+    <div class=" head-contain !tw-absolute !tw-left-[2rem] !tw-top-36">
+        <span class="!tw-text-white !tw-text-[5rem] !tw-leading-[5rem]"> Daily Tasks <br> Daily
+            Rewards
+        </span>
+        <div class="!tw-ml-1">
+            <span class="!tw-text-white  !tw-text-[1rem] !tw-leading-[3.5rem]">Complete polls and
+                Tasks
+                offers
+                and get rewarded!<br>
+
+            </span>
+            <span class="!tw-text-white text-sm">
+                You will get <span class="!tw-text-green-400 !tw-font-bold">₹10</span> to free just for logging in to
+                the
+                app
+                consecutively <br> for the very first seven
+                days. Do
+                some simple new user tasks <br> in the app and get further Coins
+            </span><br>
+            <button class="btn-download fa-brands fa-google-play mt-3"> Playstore</button>
+            <button class="btn-download fa-brands fa-apple"> Appstore</button>
+        </div>
+    </div>
+
+    <p class="!tw-text-center !tw-mt-10 !tw-text-4xl">App Features</p>
+
+    <div class="card-group !tw-p-10">
+        <div class="card !tw-border-none">
+            <img src="money.png" class="!tw-self-center card-img-top !tw-p-5 !tw-w-44"
+                alt="Hollywood Sign on The Hill" />
+            <div class="card-body">
+                <h5 class="card-title !tw-text-center">India's Biggest earning platform</h5>
+                <p class="card-text !tw-text-center">
+                    More than 1 Crore Indians are already earning cash on mCash, making it India's biggest earning
+                    platform
+                </p>
+            </div>
+        </div>
+        <div class="card !tw-border-none">
+            <img src="invite.png" class="card-img-top !tw-p-5 !tw-w-44 !tw-self-center" alt="invite" />
+            <div class="card-body">
+                <h5 class="card-title !tw-text-center">Invite close ones to earn with them</h5>
+                <p class="card-text !tw-text-center">You can earn extra by inviting your friends and family to join and
+                    earn on
+                </p>
+            </div>
+        </div>
+        <div class="card !tw-border-none">
+            <img src="video.png" class="card-img-top !tw-p-5 !tw-w-44 !tw-self-center" alt="video" />
+            <div class="card-body">
+                <h5 class="card-title !tw-text-center">As an Entertainment app</h5>
+                <p class="card-text !tw-text-center">Our app includes many fun games and tasks. So you will never be
+                    bored of it
+                </p>
+            </div>
+        </div>
+        <div class="card !tw-border-none">
+            <img src="gift-card.png" class="card-img-top !tw-p-5 !tw-w-44 !tw-self-center" alt="gift card" />
+            <div class="card-body">
+                <h5 class="card-title !tw-text-center">Giftcards and vouchers</h5>
+                <p class="card-text !tw-text-center">Get gifts and vouchers of servies like Playstore, Amazon, Spotify
+                    and many more.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="!tw-w-[80%] !tw-mx-auto !tw-mt-10">
+
+    <div class="!tw-flex !tw-flex-row !tw-p-16">
+        <div class="!tw-w-[50%]">
+            <span class="!tw-text-xl">You earn big cash rewards by inviting friends on mCash. On inviting your first
+                friend
+                you get
+                ₹5 as
+                soon as your friend logs in. On completing “Various Tasks", users can earn money and withdraw rewards
+                immediately.Withdraw Wallet Cash to your account after completing 3 simple tasks through India's best
+                money Earning app.nstant Cash withdrawal: mCash is one of the most trusted applications around the globe
+                on the Android play store and has been used by plenty of users till date. </span>
+        </div>
+        <div class="!tw-w-[50%]">
+            <img src="task.png" class="!tw-w-52 !tw-block !tw-mx-auto" alt="tasks">
+        </div>
+    </div>
+
+    <div class="!tw-flex !tw-flex-row !tw-p-16">
+        <div class="!tw-w-[50%]">
+            <img src="vgame.png" class="!tw-w-52 !tw-block !tw-mx-auto" alt="tasks">
+        </div>
+        <div class="!tw-w-[50%]">
+            <span class="!tw-text-xl">Our app is an entertainment app and we provide a wholesome experience for our
+                users. We've integrated various games, tasks and activities on the application to make the user
+                experience better and enhanced.There are lots of simple money earning tasks in
+                mCash like doing app installs, Registrations, etc. You can earn great rewards by spending 10 minutes per
+                day on the mCash app. Complete Tasks and offers to redeem various gift vouchers.
+            </span>
+        </div>
+    </div>
+    <hr class="!tw-w-[80%] !tw-mx-auto !tw-mt-10">
+
+    <p class="!tw-text-center !tw-mb-10 !tw-text-4xl">Our happy customers</p>
+    <div class="!tw-flex !tw-flex-wrap !tw-justify-center p-10">
+        <div class="!tw-max-w-sm !tw-rounded !tw-overflow-hidden !tw-shadow-lg !tw-mr-3">
+            <img class="!tw-w-full" src="guy1.jpg" alt="customer1">
+            <div class="!tw-px-6 !tw-py-4">
+                <div class="!tw-font-bold !tw-text-xl !tw-mb-2">Rahul Shah</div>
+                <p class="!tw-text-gray-700 !tw-text-base">
+                    I Love mCash, it really helps me have a good entertainment time as well as earning money from that
+                    entertainment
+                </p>
+            </div>
+            <p class="!tw-text-gray-700 !tw-text-sm !tw-font-bold !tw-ml-5">
+                Rating :
+            </p>
+            <div class="!tw-flex !tw-items-center !tw-ml-5 !tw-mb-5">
+                <svg class="!tw-w-5 !tw-h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 !tw-h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 !tw-h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 !tw-h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="!tw-max-w-sm !tw-rounded !tw-overflow-hidden !tw-shadow-lg !tw-mr-3 review">
+            <img class="!tw-w-full" src="guy2.jpg" alt="customer2">
+            <div class="!tw-px-6 !tw-py-4">
+                <div class="!tw-font-bold !tw-text-xl !tw-mb-2">Ishaan Rajput</div>
+                <p class="!tw-text-gray-700 !tw-text-base">
+                    I really easy to use and user-friendly app, Have been using for a long time now. My user experience
+                    is excellent.
+                </p>
+            </div>
+            <p class="!tw-text-gray-700 !tw-text-sm !tw-font-bold !tw-ml-5">
+                Rating :
+            </p>
+            <div class="!tw-flex !tw-items-center !tw-ml-5">
+                <svg class="!tw-w-5 !tw-h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 !tw-h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 !tw-h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 !tw-h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="!tw-max-w-sm !tw-rounded !tw-overflow-hidden !tw-shadow-lg !tw-mr-3 review">
+            <img class="!tw-w-full" src="guy3.jpg" alt="customer3">
+            <div class="!tw-px-6 !tw-py-4">
+                <div class="!tw-font-bold !tw-text-xl !tw-mb-2">Amit Singh</div>
+                <p class="!tw-text-gray-700 !tw-text-base">
+                    I have been using mCash for like 3 months now, I have been having a perfect experience. Loved it!
+                </p>
+            </div>
+            <p class="!tw-text-gray-700 !tw-text-sm !tw-font-bold !tw-ml-5">
+                Rating :
+            </p>
+            <div class="!tw-flex !tw-items-center !tw-ml-5">
+                <svg class="!tw-w-5 !tw-h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 !tw-h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 !tw-h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg class="!tw-w-5 h-5 !tw-text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <hr class="!tw-w-[80%] !tw-mx-auto !tw-mt-10">
+
+    <p class="!tw-text-center !tw-mt-10 !tw-text-4xl">Instant Cash withdrawal</p>
+
+    <div class="card-group !tw-p-10">
+        <div class="card !tw-border-none">
+            <img src="paytm.png" class="!tw-self-center card-img-top !tw-p-5 !tw-w-44" alt="Paytm" />
+            <div class="card-body">
+                <h5 class="card-title !tw-text-center">Paytm</h5>
+                <p class="card-text !tw-text-center">
+                    You can instantly redeem coins into real paytm cash within a few minutes with minimum redeem as low
+                    as INR 5.
+                </p>
+            </div>
+        </div>
+        <div class="card !tw-border-none">
+            <img src="paypal.png" class="card-img-top !tw-p-5 !tw-w-44 !tw-self-center" alt="invite" />
+            <div class="card-body">
+                <h5 class="card-title !tw-text-center">Paypal</h5>
+                <p class="card-text !tw-text-center">With International Currency Support, You can instantly redeem coins
+                    into real Paypal Balance without any hassle.
+                </p>
+            </div>
+        </div>
+        <div class="card !tw-border-none">
+            <img src="gift-card-1.png" class="card-img-top !tw-p-5 !tw-w-24 !tw-self-center" alt="video" />
+            <div class="card-body">
+                <h5 class="card-title !tw-text-center">Giftcards and Vouchers</h5>
+                <p class="card-text !tw-text-center">We have options of vouchers and gift cards from different vendors
+                    like Google play, Amazon, spotify and many more with instant redeem codes being sent to your Email
+                    ID.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="!tw-w-[80%] !tw-mx-auto !tw-mt-10">
+
+    <p class="!tw-text-center !tw-mt-10 !tw-text-4xl">Contact Us</p>
+
+    <div class="!tw-w-[54rem] !tw-max-w-lg mx-auto">
+        <form class="!tw-bg-white !tw-shadow-md !tw-rounded !tw-px-8 !tw-pt-6 !tw-pb-8 !tw-mb-4">
+            <div class="mb-4">
+                <label class="!tw-block !tw-text-gray-700 !tw-text-sm !tw-font-bold !tw-mb-2" for="username">
+                    Email
+                </label>
+                <input
+                    class="!tw-shadow !tw-appearance-none !tw-border !tw-rounded !tw-w-full !tw-py-2 !tw-px-3 !tw-text-gray-700 !tw-leading-tight !tw-focus:outline-none !tw-focus:shadow-outline"
+                    id="email" type="text" placeholder="Email">
+            </div>
+            <div class="mb-6">
+                <label class="!tw-block !tw-text-gray-700 !tw-text-sm !tw-font-bold !tw-mb-2" for="password">
+                    Query / Feedback
+                </label>
+                <textarea
+                    class="!tw-shadow !tw-appearance-none !tw-border !tw-rounded !tw-w-full !tw-py-2 !tw-px-3 !tw-text-gray-700 !tw-mb-3 !tw-leading-tight !tw-focus:outline-none !tw-focus:shadow-outline"
+                    id="password" type="textarea" rows="4" cols="50" placeholder="Feedback"></textarea>
+            </div>
+            <div class="!tw-flex !tw-items-center !tw-justify-between">
+                <button
+                    class="!tw-border-none !tw-text-white !tw-font-bold !tw-py-2 !tw-px-4 !tw-rounded !tw-bg-[#5C00A4] submitbtn"
+                    type="button">
+                    Submit
+                </button>
+                <a class="!tw-inline-block !tw-align-baseline !tw-font-bold !tw-text-sm !tw-text-[#5C00A4] !tw-hover:text-blue-800"
+                    href="#">
+                    Forgot Password?
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>mCash Bitz
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Privacy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Transcations</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-globe me-3 text-secondary"></i> https://mcash.fun/ </p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            feedback@mcash.fun
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i> +91 987654321</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2022 Copyright: mCash Bitz
+        </div>
+    </footer>
+
+    <script src="particle.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
