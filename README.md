@@ -1,6 +1,8 @@
 <h1> App Landing Page using TailwindCSS</h1>
 
-<p><strong>Disclaimer:</strong> This is a personal project and is not affiliated with or endorsed by the real company "mCash". I do not own the company and was not paid by that company. It is just a <strong>Personal Project</strong></p>
+<p><strong>Disclaimer:</strong> This is one of my personal projects and is not affiliated with or endorsed by the real company "mCash". I do not own the company and was not paid by that company. It is just a <strong>Personal Project</strong></p>
+
+Live view : <a href="https://mcashassignmentsite.000webhostapp.com">Click here to View Site!</a>
 
 <h2>Features 🚀</h2>
 
@@ -9,7 +11,8 @@
   <li>Clean and neat interface</li>
   <li>100% responsive design</li>
   <li>Built with TailwindCSS for sleek and modern styling</li>
-  <li>Particle.js library for an eye-catching design</li>
+  <li>AOS and Particle.js library for an eye-catching design and animation</li>
+  
 </ul>
 
 <h2>Getting Started - Steps 📲</h2>
