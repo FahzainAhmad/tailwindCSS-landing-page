@@ -1,4 +1,4 @@
-<h1> App Landing Page</h1>
+<h1> App Landing Page using TailwindCSS</h1>
 
 <p><strong>Disclaimer:</strong> This is a personal project and is not affiliated with or endorsed by the real company "mCash". I do not own the company and was not paid by that company. It is just a <strong>Personal Project</strong></p>
 
